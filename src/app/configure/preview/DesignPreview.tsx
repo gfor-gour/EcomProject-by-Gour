@@ -58,7 +58,7 @@
     const handleCheckout = () => {
         if (user) {
         // create payment session
-        createPaymentSession({ configId: id })
+        createPaymentSession({ configId: configuration.id })
         } else {
         // need to log in
         localStorage.setItem('configurationId', id)
@@ -158,6 +158,9 @@
 
                 <div className='mt-8 flex justify-end pb-12'>
                 <Button
+                    disabled={false}
+                    isLoading={false} 
+                    loadingText="loading"
                     onClick={() => handleCheckout()}
                     className='px-4 sm:px-6 lg:px-8'>
                     Check out <ArrowRight className='h-4 w-4 ml-1.5 inline' />
