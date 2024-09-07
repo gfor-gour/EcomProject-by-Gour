@@ -26,7 +26,7 @@
     const baseUrl =
         process.env.NODE_ENV === 'development'
         ? 'http://localhost:3000'
-        : 'https://ecom-project-by-gour.vercel.app'
+        : 'https://casecobra-by-gour.vercel.app'
 
     return (
         <Html>
