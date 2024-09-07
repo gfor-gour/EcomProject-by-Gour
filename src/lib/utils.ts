@@ -42,6 +42,6 @@ export function constructMetadata({
       creator: '@gour_gupal_talukder',
     },
     icons,
-    metadataBase: new URL("https://ecom-project-by-gour.vercel.app/")
+    metadataBase: new URL("https://casecobra-by-gour.vercel.app/")
   }
 } 
